@@ -1,9 +1,9 @@
-# Encryptix Protocol Documentation
+# StealthPass Protocol Documentation
 
 ## Overview
-Encryptix is an on-chain event ticketing platform designed for anonymous users, Web2 users, and Web3 users. It offers a seamless user experience comparable to platforms like Luma, leveraging advanced cryptographic techniques like Fully Homomorphic Encryption (FHE) and Account Abstraction (AA) to ensure privacy and interoperability.
+StealthPass is an on-chain event ticketing platform designed for anonymous users, Web2 users, and Web3 users. It offers a seamless user experience comparable to platforms like Luma, leveraging advanced cryptographic techniques like Fully Homomorphic Encryption (FHE) and Account Abstraction (AA) to ensure privacy and interoperability.
 
-Encryptix enables event organizers to host events and users to securely purchase tickets while maintaining anonymity or interacting through traditional Web3 wallets. For anonymous users, Encryptix ensures that their identities are hidden while allowing seamless event participation.
+StealthPass enables event organizers to host events and users to securely purchase tickets while maintaining anonymity or interacting through traditional Web3 wallets. For anonymous users, StealthPass ensures that their identities are hidden while allowing seamless event participation.
 
 ---
 
@@ -15,7 +15,7 @@ Encryptix enables event organizers to host events and users to securely purchase
 - **Anonymous Users**: Encrypted wallet addresses and secure ticket validation through FHE.
 
 ### 2. **Anonymity with FHE**
-Encryptix uses Fully Homomorphic Encryption (FHE) to provide anonymity for users opting for the "Anon Ticket" option. This ensures:
+StealthPass uses Fully Homomorphic Encryption (FHE) to provide anonymity for users opting for the "Anon Ticket" option. This ensures:
 - The encrypted holder address is stored on the blockchain.
 - Ciphertext is securely stored on-chain using the Inco platform.
 - Event organizers can verify encrypted tickets without revealing user identities.
@@ -73,7 +73,7 @@ Encryptix uses Fully Homomorphic Encryption (FHE) to provide anonymity for users
 
 ## Why Base Blockchain is a Key Choice
 
-Base Blockchain plays a pivotal role in the Encryptix Protocol by serving as the backbone for storing essential credentials such as NFTs, USDC, and user-specific data. While Inco is utilized as an encrypted IPFS-like gateway for secure on-chain data storage, Base ensures on-chain accessibility and integrity. Moreover, Base's composability allows encrypted keys and data to be used in advanced computations, enabling unique features like secure identity management and future data retrieval without compromising privacy. By combining Base's robust blockchain capabilities with Inco's privacy-focused encrypted storage, Encryptix provides a seamless and secure user experience.
+Base Blockchain plays a pivotal role in the StealthPass Protocol by serving as the backbone for storing essential credentials such as NFTs, USDC, and user-specific data. While Inco is utilized as an encrypted IPFS-like gateway for secure on-chain data storage, Base ensures on-chain accessibility and integrity. Moreover, Base's composability allows encrypted keys and data to be used in advanced computations, enabling unique features like secure identity management and future data retrieval without compromising privacy. By combining Base's robust blockchain capabilities with Inco's privacy-focused encrypted storage, StealthPass provides a seamless and secure user experience.
 
 - **Composability**:
   - FHE allows cryptographic operations to be performed directly on encrypted data.
@@ -93,7 +93,7 @@ Base Blockchain plays a pivotal role in the Encryptix Protocol by serving as the
 
 ## Protocol Architecture and User Flow
 
-Encryptix's architecture leverages the combined power of Base Blockchain, Inco's encrypted storage, and Hyperlane's cross-chain messaging to create a seamless event ticketing experience. The protocol's user flow ensures a smooth interaction for organizers and attendees, from ticket purchases to verifications:
+StealthPass's architecture leverages the combined power of Base Blockchain, Inco's encrypted storage, and Hyperlane's cross-chain messaging to create a seamless event ticketing experience. The protocol's user flow ensures a smooth interaction for organizers and attendees, from ticket purchases to verifications:
 
 1. **User Registration**: Users can connect wallets using Privy or generate local wallets for anonymous interactions.
 2. **Ticket Storage**: Credentials, such as NFTs and USDC, are securely stored on Base Blockchain. Encrypted ticket data is offloaded to Inco, functioning as an IPFS-like storage but with enhanced privacy features.
@@ -187,5 +187,5 @@ Manages encrypted ticket verification and raffle operations.
 ---
 
 ## Conclusion
-Encryptix redefines event ticketing with cutting-edge cryptography and blockchain technology. By leveraging FHE, Hyperlane, and AA wallets, it creates a user-friendly platform that prioritizes privacy, security, and composability. Whether for anonymous users, Web2 adopters, or seasoned Web3 enthusiasts, Encryptix ensures a seamless and secure ticketing experience.
+StealthPass redefines event ticketing with cutting-edge cryptography and blockchain technology. By leveraging FHE, Hyperlane, and AA wallets, it creates a user-friendly platform that prioritizes privacy, security, and composability. Whether for anonymous users, Web2 adopters, or seasoned Web3 enthusiasts, StealthPass ensures a seamless and secure ticketing experience.
 
