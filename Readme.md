@@ -7,6 +7,31 @@ StealthPass enables event organizers to host events and users to securely purcha
 
 ---
 
+## Links
+- **Web App**: https://stealth-pass.vercel.app/
+- **Telegram Mini App**: https://t.me/StealthPass_bot
+- **App Demo**: 
+- **Protocol Working**:
+
+---
+
+## Deployed Addresses on AVAX
+
+- **Event Contract**: 0x503c259Dd72e236f71576a980075CE6653A7aCE7
+- **USDC Contract**: 0x7c3482CcAE5090e1C72a0407085d52e15f44974D
+- **Hyperlane Mailbox**: 0xdDB9F3da750caEd4703C94b8E024ccBC5017bC97
+
+---
+
+## Repository Links
+
+- **Contracts Repository**: [StealthPass Contracts](https://github.com/TechieeGeeeks/StealthPass-Contracts)
+- **Frontend Repository**: [StealthPass Frontend](https://github.com/TechieeGeeeks/StealthPass-Frontend)
+- **Hyperlane Repository**: [Hyperlane Deployments](https://github.com/TechieeGeeeks/StealthPass-Hyperlane)
+- **Mailer Repository**: [StealthPass Mailer](https://github.com/TechieeGeeeks/StealthPass-Mailer)
+
+---
+
 ## Problems Addressed
 
 Anonymous users, such as developers attending ETHGlobal events, conferences, or Devcon, often face significant challenges when purchasing on-chain tokens for tickets. These challenges include:
