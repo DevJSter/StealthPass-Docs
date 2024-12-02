@@ -1,7 +1,5 @@
 # StealthPass Protocol Documentation
 
----
-
 ## Overview
 StealthPass is an on-chain event ticketing platform designed for anonymous users, Web2 users, and Web3 users. It offers a seamless user experience comparable to platforms like Luma, leveraging advanced cryptographic techniques like Fully Homomorphic Encryption (FHE) and Account Abstraction (AA) to ensure privacy and interoperability.
 
@@ -9,46 +7,29 @@ StealthPass enables event organizers to host events and users to securely purcha
 
 ---
 
-## Deployed Addresses on AVAX
-
-- **Event Contract**: `0x503c259Dd72e236f71576a980075CE6653A7aCE7`
-- **USDC Contract**: `0x7c3482CcAE5090e1C72a0407085d52e15f44974D`
-- **Hyperlane Mailbox**: `0xdDB9F3da750caEd4703C94b8E024ccBC5017bC97`
-
----
-
-## Repository Links
-
-- **Contracts Repository**: [StealthPass Contracts](https://github.com/TechieeGeeeks/StealthPass-Contracts)
-- **Frontend Repository**: [StealthPass Frontend](https://github.com/TechieeGeeeks/StealthPass-Frontend)
-- **Hyperlane Repository**: [Hyperlane Deployments](https://github.com/TechieeGeeeks/StealthPass-Hyperlane)
-- **Mailer Repository**: [StealthPass Mailer](https://github.com/TechieeGeeeks/StealthPass-Mailer)
-
 ## Problems Addressed
 
 Anonymous users, such as developers attending ETHGlobal events, conferences, or Devcon, often face significant challenges when purchasing on-chain tokens for tickets. These challenges include:
 
-Identity Doxxing:
+1. **Identity Doxxing**:
+   - At real-time events, users are required to reveal their real-world identities, which get mapped to their on-chain identities.
+   - Many users rely on their on-chain profiles for sensitive consumer-centric transactions or subscriptions that they prefer to keep private.
+   - Users holding significant funds face security risks and are reluctant to doxx themselves when attending these events.
 
-At real-time events, users are required to reveal their real-world identities, which get mapped to their on-chain identities.
+2. **Lack of Composability with ZK-Based Solutions**:
+   - Event organizers using ZK approaches cannot utilize ticket data for analytics or data markets due to the lack of user information.
+   - ZK solutions prevent users from using their primary wallets for event interactions. For instance, users winning on-chain raffles cannot claim rewards due to the commitment-based model.
+   - Proving tickets on-chain with ZK solutions is computationally expensive.
 
-Many users rely on their on-chain profiles for sensitive consumer-centric transactions or subscriptions that they prefer to keep private.
+3. **Government Requirements for Confidential Access Control**:
+   - Governments have shown interest in NFT-based event ticketing but require confidentiality and controlled access to data.
 
-Users holding significant funds face security risks and are reluctant to doxx themselves when attending these events.
+StealthPass addresses these issues by leveraging Fully Homomorphic Encryption (FHE):
+   - It ensures user confidentiality while allowing composability for event organizers to utilize data within privacy-preserving constraints.
+   - Users can securely use their main wallets to claim rewards and participate in on-chain activities.
+   - It provides affordable and efficient ticket validation while meeting government standards for confidentiality and access control.
 
-Lack of Composability with ZK-Based Solutions:
-
-Event organizers using ZK approaches cannot utilize ticket data for analytics or data markets due to the lack of user information.
-
-ZK solutions prevent users from using their primary wallets for event interactions. For instance, users winning on-chain raffles cannot claim rewards due to the commitment-based model.
-
-Proving tickets on-chain with ZK solutions is computationally expensive.
-
-Government Requirements for Confidential Access Control:
-
-Governments have shown interest in NFT-based event ticketing but require confidentiality and controlled access to data.
-
-StealthPass addresses these issues by leveraging Fully Homomorphic 
+---
 
 ## Key Features
 
