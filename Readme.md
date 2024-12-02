@@ -24,6 +24,32 @@ StealthPass enables event organizers to host events and users to securely purcha
 - **Hyperlane Repository**: [Hyperlane Deployments](https://github.com/TechieeGeeeks/StealthPass-Hyperlane)
 - **Mailer Repository**: [StealthPass Mailer](https://github.com/TechieeGeeeks/StealthPass-Mailer)
 
+## Problems Addressed
+
+Anonymous users, such as developers attending ETHGlobal events, conferences, or Devcon, often face significant challenges when purchasing on-chain tokens for tickets. These challenges include:
+
+Identity Doxxing:
+
+At real-time events, users are required to reveal their real-world identities, which get mapped to their on-chain identities.
+
+Many users rely on their on-chain profiles for sensitive consumer-centric transactions or subscriptions that they prefer to keep private.
+
+Users holding significant funds face security risks and are reluctant to doxx themselves when attending these events.
+
+Lack of Composability with ZK-Based Solutions:
+
+Event organizers using ZK approaches cannot utilize ticket data for analytics or data markets due to the lack of user information.
+
+ZK solutions prevent users from using their primary wallets for event interactions. For instance, users winning on-chain raffles cannot claim rewards due to the commitment-based model.
+
+Proving tickets on-chain with ZK solutions is computationally expensive.
+
+Government Requirements for Confidential Access Control:
+
+Governments have shown interest in NFT-based event ticketing but require confidentiality and controlled access to data.
+
+StealthPass addresses these issues by leveraging Fully Homomorphic 
+
 ## Key Features
 
 ### 1. **Multi-User Support**
