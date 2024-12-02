@@ -2,6 +2,13 @@
 
 ---
 
+## Overview
+StealthPass is an on-chain event ticketing platform designed for anonymous users, Web2 users, and Web3 users. It offers a seamless user experience comparable to platforms like Luma, leveraging advanced cryptographic techniques like Fully Homomorphic Encryption (FHE) and Account Abstraction (AA) to ensure privacy and interoperability.
+
+StealthPass enables event organizers to host events and users to securely purchase tickets while maintaining anonymity or interacting through traditional Web3 wallets. For anonymous users, StealthPass ensures that their identities are hidden while allowing seamless event participation.
+
+---
+
 ## Deployed Addresses on AVAX
 
 - **Event Contract**: `0x503c259Dd72e236f71576a980075CE6653A7aCE7`
@@ -16,15 +23,6 @@
 - **Frontend Repository**: [StealthPass Frontend](https://github.com/TechieeGeeeks/StealthPass-Frontend)
 - **Hyperlane Repository**: [Hyperlane Deployments](https://github.com/TechieeGeeeks/StealthPass-Hyperlane)
 - **Mailer Repository**: [StealthPass Mailer](https://github.com/TechieeGeeeks/StealthPass-Mailer)
-
----
-
-## Overview
-StealthPass is an on-chain event ticketing platform designed for anonymous users, Web2 users, and Web3 users. It offers a seamless user experience comparable to platforms like Luma, leveraging advanced cryptographic techniques like Fully Homomorphic Encryption (FHE) and Account Abstraction (AA) to ensure privacy and interoperability.
-
-StealthPass enables event organizers to host events and users to securely purchase tickets while maintaining anonymity or interacting through traditional Web3 wallets. For anonymous users, StealthPass ensures that their identities are hidden while allowing seamless event participation.
-
----
 
 ## Key Features
 
