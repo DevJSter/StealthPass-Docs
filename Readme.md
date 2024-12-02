@@ -21,7 +21,7 @@ StealthPass uses Fully Homomorphic Encryption (FHE) to provide anonymity for use
 - Event organizers can verify encrypted tickets without revealing user identities.
 
 ### 3. **Decentralized Architecture**
-- **Base Blockchain**: Stores encrypted holder addresses.
+- **Avax Fuji Blockchain**: Stores encrypted holder addresses.
 - **Inco Storage**: Functions as encrypted on-chain storage, similar to IPFS but with privacy-preserving capabilities.
 - **Hyperlane SDK**: Ensures secure cross-chain messaging.
 
@@ -50,7 +50,7 @@ StealthPass uses Fully Homomorphic Encryption (FHE) to provide anonymity for use
    - Encrypt the public key using the `fhevmjs` SDK.
 
 3. **Data Storage**:
-   - The encrypted holder address is stored on Base.
+   - The encrypted holder address is stored on Avax Fuji.
    - Ciphertext is stored on-chain on Inco L1 via Hyperlane SDK.
 
 4. **QR Code Generation**:
@@ -64,16 +64,16 @@ StealthPass uses Fully Homomorphic Encryption (FHE) to provide anonymity for use
 
 ### Organizer Workflow
 
-1. Deploy an event contract on Base blockchain.
+1. Deploy an event contract on Avax Fuji blockchain.
 2. Specify event details (e.g., name, ticket price, location).
 3. Verify attendee tickets by using re-encryption calls and comparing against QR code data.
 4. Conduct raffles or special activities using encrypted ticket data.
 
 ---
 
-## Why Base Blockchain is a Key Choice
+## Why Avax Fuji Blockchain is a Key Choice
 
-Base Blockchain plays a pivotal role in the StealthPass Protocol by serving as the backbone for storing essential credentials such as NFTs, USDC, and user-specific data. While Inco is utilized as an encrypted IPFS-like gateway for secure on-chain data storage, Base ensures on-chain accessibility and integrity. Moreover, Base's composability allows encrypted keys and data to be used in advanced computations, enabling unique features like secure identity management and future data retrieval without compromising privacy. By combining Base's robust blockchain capabilities with Inco's privacy-focused encrypted storage, StealthPass provides a seamless and secure user experience.
+Avax Fuji Blockchain plays a pivotal role in the StealthPass Protocol by serving as the backbone for storing essential credentials such as NFTs, USDC, and user-specific data. While Inco is utilized as an encrypted IPFS-like gateway for secure on-chain data storage, Avax Fuji ensures on-chain accessibility and integrity. Moreover, Avax Fuji's composability allows encrypted keys and data to be used in advanced computations, enabling unique features like secure identity management and future data retrieval without compromising privacy. By combining Avax Fuji's robust blockchain capabilities with Inco's privacy-focused encrypted storage, StealthPass provides a seamless and secure user experience.
 
 - **Composability**:
   - FHE allows cryptographic operations to be performed directly on encrypted data.
@@ -84,7 +84,7 @@ Base Blockchain plays a pivotal role in the StealthPass Protocol by serving as t
   - Supports advanced functionalities like prize distribution or anonymous messaging.
 
 - **Flexibility**:
-  - Base contracts can access unique keys and perform computations.
+  - Avax Fuji contracts can access unique keys and perform computations.
   - Users can retrieve results in the future without revealing sensitive data.
 
 ---
@@ -93,12 +93,12 @@ Base Blockchain plays a pivotal role in the StealthPass Protocol by serving as t
 
 ## Protocol Architecture and User Flow
 
-StealthPass's architecture leverages the combined power of Base Blockchain, Inco's encrypted storage, and Hyperlane's cross-chain messaging to create a seamless event ticketing experience. The protocol's user flow ensures a smooth interaction for organizers and attendees, from ticket purchases to verifications:
+StealthPass's architecture leverages the combined power of Avax Fuji Blockchain, Inco's encrypted storage, and Hyperlane's cross-chain messaging to create a seamless event ticketing experience. The protocol's user flow ensures a smooth interaction for organizers and attendees, from ticket purchases to verifications:
 
 1. **User Registration**: Users can connect wallets using Privy or generate local wallets for anonymous interactions.
-2. **Ticket Storage**: Credentials, such as NFTs and USDC, are securely stored on Base Blockchain. Encrypted ticket data is offloaded to Inco, functioning as an IPFS-like storage but with enhanced privacy features.
+2. **Ticket Storage**: Credentials, such as NFTs and USDC, are securely stored on Avax Fuji Blockchain. Encrypted ticket data is offloaded to Inco, functioning as an IPFS-like storage but with enhanced privacy features.
 3. **Verification Process**: During verification, the organizer uses re-encryption calls via the Inco gateway to validate encrypted credentials. This ensures privacy while enabling seamless event access.
-4. **Composable Computations**: Base Blockchain enables advanced computations with encrypted data, allowing features like lotteries, identity management, and future data retrieval without exposing sensitive information.
+4. **Composable Computations**: Avax Fuji Blockchain enables advanced computations with encrypted data, allowing features like lotteries, identity management, and future data retrieval without exposing sensitive information.
 
 ---
 
@@ -133,7 +133,7 @@ Manages encrypted ticket verification and raffle operations.
 
 ### Cross-Chain Messaging
 - **Hyperlane SDK**:
-  - Facilitates communication between Base and Inco L1.
+  - Facilitates communication between Avax Fuji and Inco L1.
   - Handles encrypted data transfer securely.
 
 ### FHE Integration
@@ -188,4 +188,3 @@ Manages encrypted ticket verification and raffle operations.
 
 ## Conclusion
 StealthPass redefines event ticketing with cutting-edge cryptography and blockchain technology. By leveraging FHE, Hyperlane, and AA wallets, it creates a user-friendly platform that prioritizes privacy, security, and composability. Whether for anonymous users, Web2 adopters, or seasoned Web3 enthusiasts, StealthPass ensures a seamless and secure ticketing experience.
-
