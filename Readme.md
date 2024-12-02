@@ -1,5 +1,24 @@
 # StealthPass Protocol Documentation
 
+---
+
+## Deployed Addresses on AVAX
+
+- **Event Contract**: `0x503c259Dd72e236f71576a980075CE6653A7aCE7`
+- **USDC Contract**: `0x7c3482CcAE5090e1C72a0407085d52e15f44974D`
+- **Hyperlane Mailbox**: `0xdDB9F3da750caEd4703C94b8E024ccBC5017bC97`
+
+---
+
+## Repository Links
+
+- **Contracts Repository**: [StealthPass Contracts](https://github.com/TechieeGeeeks/StealthPass-Contracts)
+- **Frontend Repository**: [StealthPass Frontend](https://github.com/TechieeGeeeks/StealthPass-Frontend)
+- **Hyperlane Repository**: [Hyperlane Deployments](https://github.com/TechieeGeeeks/StealthPass-Hyperlane)
+- **Mailer Repository**: [StealthPass Mailer](https://github.com/TechieeGeeeks/StealthPass-Mailer)
+
+---
+
 ## Overview
 StealthPass is an on-chain event ticketing platform designed for anonymous users, Web2 users, and Web3 users. It offers a seamless user experience comparable to platforms like Luma, leveraging advanced cryptographic techniques like Fully Homomorphic Encryption (FHE) and Account Abstraction (AA) to ensure privacy and interoperability.
 
@@ -91,7 +110,7 @@ Avax Fuji Blockchain plays a pivotal role in the StealthPass Protocol by serving
 
 ## Smart Contract Design
 
-## Protocol Architecture and User Flow
+### Protocol Architecture and User Flow
 
 StealthPass's architecture leverages the combined power of Avax Fuji Blockchain, Inco's encrypted storage, and Hyperlane's cross-chain messaging to create a seamless event ticketing experience. The protocol's user flow ensures a smooth interaction for organizers and attendees, from ticket purchases to verifications:
 
@@ -184,7 +203,8 @@ Manages encrypted ticket verification and raffle operations.
 4. **Integration with dApps**:
    - Collaborate with DeFi and NFT platforms for ticket resales and rewards.
 
----
+
 
 ## Conclusion
+
 StealthPass redefines event ticketing with cutting-edge cryptography and blockchain technology. By leveraging FHE, Hyperlane, and AA wallets, it creates a user-friendly platform that prioritizes privacy, security, and composability. Whether for anonymous users, Web2 adopters, or seasoned Web3 enthusiasts, StealthPass ensures a seamless and secure ticketing experience.
