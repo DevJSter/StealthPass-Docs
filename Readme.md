@@ -13,16 +13,13 @@ StealthPass enables event organizers to host events and users to securely purcha
 
 - **Why StealthPass**: https://www.loom.com/share/58c835d088c947fa8629b79aa7fe3006?sid=fe77c454-9580-4426-b5a7-771d1820f4d7
 
-
 - **App Demo**: https://www.loom.com/share/af94aa5d2be4496b965fba08e965c2e4?sid=19ecc721-ba28-40ec-af65-52d65bca3d9b
-
 
 - **Protocol Working**: https://www.loom.com/share/f9ae6a1b86664090b6966eda7fa9f7ee?sid=4e27a8a7-ca16-44e8-90a0-ffb792c432b3
 
-
 ---
 
-## Deployed Addresses on AVAX
+## Deployed Addresses on EDU Chain
 
 - **Event Contract**: 0x503c259Dd72e236f71576a980075CE6653A7aCE7
 - **USDC Contract**: 0x7c3482CcAE5090e1C72a0407085d52e15f44974D
@@ -77,7 +74,7 @@ StealthPass uses Fully Homomorphic Encryption (FHE) to provide anonymity for use
 - Event organizers can verify encrypted tickets without revealing user identities.
 
 ### 3. **Decentralized Architecture**
-- **Avax Fuji Blockchain**: Stores encrypted holder addresses.
+- **EDU Chain Blockchain**: Stores encrypted holder addresses.
 - **Inco Storage**: Functions as encrypted on-chain storage, similar to IPFS but with privacy-preserving capabilities.
 - **Hyperlane SDK**: Ensures secure cross-chain messaging.
 
@@ -106,7 +103,7 @@ StealthPass uses Fully Homomorphic Encryption (FHE) to provide anonymity for use
    - Encrypt the public key using the `fhevmjs` SDK.
 
 3. **Data Storage**:
-   - The encrypted holder address is stored on Avax Fuji.
+   - The encrypted holder address is stored on EDU Chain.
    - Ciphertext is stored on-chain on Inco L1 via Hyperlane SDK.
 
 4. **QR Code Generation**:
@@ -120,27 +117,27 @@ StealthPass uses Fully Homomorphic Encryption (FHE) to provide anonymity for use
 
 ### Organizer Workflow
 
-1. Deploy an event contract on Avax Fuji blockchain.
+1. Deploy an event contract on EDU Chain blockchain.
 2. Specify event details (e.g., name, ticket price, location).
 3. Verify attendee tickets by using re-encryption calls and comparing against QR code data.
 4. Conduct raffles or special activities using encrypted ticket data.
 
 ---
 
-## Why Avax Fuji Blockchain is a Key Choice
+## Why EDU Chain Blockchain is a Key Choice
 
-Avax Fuji Blockchain plays a pivotal role in the StealthPass Protocol by serving as the backbone for storing essential credentials such as NFTs, USDC, and user-specific data. While Inco is utilized as an encrypted IPFS-like gateway for secure on-chain data storage, Avax Fuji ensures on-chain accessibility and integrity. Moreover, Avax Fuji's composability allows encrypted keys and data to be used in advanced computations, enabling unique features like secure identity management and future data retrieval without compromising privacy. By combining Avax Fuji's robust blockchain capabilities with Inco's privacy-focused encrypted storage, StealthPass provides a seamless and secure user experience.
+EDU Chain Blockchain plays a pivotal role in the StealthPass Protocol by serving as the backbone for storing essential credentials such as NFTs, USDC, and user-specific data. While Inco is utilized as an encrypted IPFS-like gateway for secure on-chain data storage, EDU Chain ensures on-chain accessibility and integrity. Moreover, EDU Chain's composability allows encrypted keys and data to be used in advanced computations, enabling unique features like secure identity management and future data retrieval without compromising privacy. By combining EDU Chain's robust blockchain capabilities with Inco's privacy-focused encrypted storage, StealthPass provides a seamless and secure user experience.
 
 - **Composability**:
   - FHE allows cryptographic operations to be performed directly on encrypted data.
   - Enables seamless interoperability across events.
-  
+
 - **Identity Reusability**:
   - Users can reuse their encrypted addresses (eAddresses) for interactions within an event.
   - Supports advanced functionalities like prize distribution or anonymous messaging.
 
 - **Flexibility**:
-  - Avax Fuji contracts can access unique keys and perform computations.
+  - EDU Chain contracts can access unique keys and perform computations.
   - Users can retrieve results in the future without revealing sensitive data.
 
 ---
@@ -149,99 +146,10 @@ Avax Fuji Blockchain plays a pivotal role in the StealthPass Protocol by serving
 
 ### Protocol Architecture and User Flow
 
-StealthPass's architecture leverages the combined power of Avax Fuji Blockchain, Inco's encrypted storage, and Hyperlane's cross-chain messaging to create a seamless event ticketing experience. The protocol's user flow ensures a smooth interaction for organizers and attendees, from ticket purchases to verifications:
+StealthPass's architecture leverages the combined power of EDU Chain Blockchain, Inco's encrypted storage, and Hyperlane's cross-chain messaging to create a seamless event ticketing experience. The protocol's user flow ensures a smooth interaction for organizers and attendees, from ticket purchases to verifications:
 
 1. **User Registration**: Users can connect wallets using Privy or generate local wallets for anonymous interactions.
-2. **Ticket Storage**: Credentials, such as NFTs and USDC, are securely stored on Avax Fuji Blockchain. Encrypted ticket data is offloaded to Inco, functioning as an IPFS-like storage but with enhanced privacy features.
+2. **Ticket Storage**: Credentials, such as NFTs and USDC, are securely stored on EDU Chain Blockchain. Encrypted ticket data is offloaded to Inco, functioning as an IPFS-like storage but with enhanced privacy features.
 3. **Verification Process**: During verification, the organizer uses re-encryption calls via the Inco gateway to validate encrypted credentials. This ensures privacy while enabling seamless event access.
-4. **Composable Computations**: Avax Fuji Blockchain enables advanced computations with encrypted data, allowing features like lotteries, identity management, and future data retrieval without exposing sensitive information.
+4. **Composable Computations**: EDU Chain Blockchain enables advanced computations with encrypted data, allowing features like lotteries, identity management
 
----
-
-### Key Components
-
-#### 1. **OriginEventContract**
-Handles ticket purchases and communication with Inco and Hyperlane.
-- **Features**:
-  - User registration and USDC payment handling.
-  - Encrypted data storage and QR code generation.
-  - Cross-chain message dispatch to Inco.
-
-#### 2. **IncoEventContract**
-Manages encrypted ticket verification and raffle operations.
-- **Features**:
-  - Deterministic key generation for token management.
-  - Secure re-encryption for ticket validation.
-  - Encrypted random number generation for raffles.
-
-### Data Structures
-- **Mappings**:
-  - `tokenKeyToEaddressToAmount`: Maps token keys to encrypted addresses and ticket amounts.
-  - `requestIdToStruct`: Tracks origin chain and event contract details for callback handling.
-
-- **Events**:
-  - `TokenProcessed`: Emitted when a ticket purchase is completed.
-  - `TokenPurchased`: Emitted when a user buys a ticket.
-
----
-
-## Technical Details
-
-### Cross-Chain Messaging
-- **Hyperlane SDK**:
-  - Facilitates communication between Avax Fuji and Inco L1.
-  - Handles encrypted data transfer securely.
-
-### FHE Integration
-- **fhevmjs SDK**:
-  - Generates public-private key pairs for ticket holding.
-  - Encrypts public keys for storage.
-
-- **TFHE Library**:
-  - Performs re-encryption for ticket validation.
-  - Supports composable cryptographic operations.
-
-### QR Code Verification
-1. QR code contains:
-   - Encrypted ticket data.
-   - Signature for validation.
-
-2. Organizer verifies:
-   - eAddress using re-encryption.
-   - User’s signed message against the QR code data.
-
----
-
-## Example Use Cases
-
-### 1. **Anonymous Event Participation**
-- Users can attend events without revealing personal information.
-- Participate in lotteries and receive rewards using encrypted identities.
-
-### 2. **Seamless Web2 Integration**
-- Users interact using familiar Web2 interfaces while enjoying Web3 benefits like privacy and transparency.
-
-### 3. **Raffles and Lotteries**
-- Event organizers can randomly select winners using encrypted ticket data.
-
----
-
-## Future Enhancements
-
-1. **Enhanced Interoperability**:
-   - Support for additional blockchains and cross-chain messaging protocols.
-
-2. **Anonymous Communication**:
-   - Enable attendees to communicate anonymously within events using eAddresses.
-
-3. **Dynamic Pricing Models**:
-   - Allow ticket prices to adjust based on demand or time.
-
-4. **Integration with dApps**:
-   - Collaborate with DeFi and NFT platforms for ticket resales and rewards.
-
-
-
-## Conclusion
-
-StealthPass redefines event ticketing with cutting-edge cryptography and blockchain technology. By leveraging FHE, Hyperlane, and AA wallets, it creates a user-friendly platform that prioritizes privacy, security, and composability. Whether for anonymous users, Web2 adopters, or seasoned Web3 enthusiasts, StealthPass ensures a seamless and secure ticketing experience.
