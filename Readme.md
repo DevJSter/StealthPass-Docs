@@ -11,7 +11,7 @@ StealthPass enables event organizers to host events and users to securely purcha
 - **Web App**: https://stealth-pass.vercel.app/
 - **Telegram Mini App**: https://t.me/StealthPass_bot
 
-- **Why StealthPass**: https://www.loom.com/share/58c835d088c947fa8629b79aa7fe3006?sid=fe77c454-9580-4426-b5a7-771d1820f4d7
+- **Why StealthPass**: [https://www.loom.com/share/58c835d088c947fa8629b79aa7fe3006?sid=fe77c454-9580-4426-b5a7-771d1820f4d7](https://www.loom.com/share/6e2868e59f0d42178a2f8df77f9d0e24?sid=16208ba0-7a42-4121-8aff-6070923a8f35)
 
 ---
 
