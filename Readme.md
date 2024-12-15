@@ -15,11 +15,11 @@ StealthPass enables event organizers to host events and users to securely purcha
 
 ---
 
-## Deployed Addresses on EDU Chain
+## Deployed Addresses on MantleSepolia
 
-- **Event Contract**: 0x503c259Dd72e236f71576a980075CE6653A7aCE7
-- **USDC Contract**: 0x7c3482CcAE5090e1C72a0407085d52e15f44974D
-- **Hyperlane Mailbox**: 0xdDB9F3da750caEd4703C94b8E024ccBC5017bC97
+- **Event Contract**: 0x14cc99f0118d56267c74f6e27066d98D05E20AF1
+- **USDC Contract**: 0x27016F12b696d23fB9b5853Ef383Ec2527420982
+- **Hyperlane Mailbox**: 0xa70fda5B181DA549576CEE02C5e3110A193149EA
 
 ---
 
@@ -70,7 +70,7 @@ StealthPass uses Fully Homomorphic Encryption (FHE) to provide anonymity for use
 - Event organizers can verify encrypted tickets without revealing user identities.
 
 ### 3. **Decentralized Architecture**
-- **EDU Chain Blockchain**: Stores encrypted holder addresses.
+- **MantleSepolia Blockchain**: Stores encrypted holder addresses.
 - **Inco Storage**: Functions as encrypted on-chain storage, similar to IPFS but with privacy-preserving capabilities.
 - **Hyperlane SDK**: Ensures secure cross-chain messaging.
 
@@ -99,7 +99,7 @@ StealthPass uses Fully Homomorphic Encryption (FHE) to provide anonymity for use
    - Encrypt the public key using the `fhevmjs` SDK.
 
 3. **Data Storage**:
-   - The encrypted holder address is stored on EDU Chain.
+   - The encrypted holder address is stored on MantleSepolia.
    - Ciphertext is stored on-chain on Inco L1 via Hyperlane SDK.
 
 4. **QR Code Generation**:
@@ -113,16 +113,16 @@ StealthPass uses Fully Homomorphic Encryption (FHE) to provide anonymity for use
 
 ### Organizer Workflow
 
-1. Deploy an event contract on EDU Chain blockchain.
+1. Deploy an event contract on MantleSepolia blockchain.
 2. Specify event details (e.g., name, ticket price, location).
 3. Verify attendee tickets by using re-encryption calls and comparing against QR code data.
 4. Conduct raffles or special activities using encrypted ticket data.
 
 ---
 
-## Why EDU Chain Blockchain is a Key Choice
+## Why MantleSepolia Blockchain is a Key Choice
 
-EDU Chain Blockchain plays a pivotal role in the StealthPass Protocol by serving as the backbone for storing essential credentials such as NFTs, USDC, and user-specific data. While Inco is utilized as an encrypted IPFS-like gateway for secure on-chain data storage, EDU Chain ensures on-chain accessibility and integrity. Moreover, EDU Chain's composability allows encrypted keys and data to be used in advanced computations, enabling unique features like secure identity management and future data retrieval without compromising privacy. By combining EDU Chain's robust blockchain capabilities with Inco's privacy-focused encrypted storage, StealthPass provides a seamless and secure user experience.
+MantleSepolia Blockchain plays a pivotal role in the StealthPass Protocol by serving as the backbone for storing essential credentials such as NFTs, USDC, and user-specific data. While Inco is utilized as an encrypted IPFS-like gateway for secure on-chain data storage, MantleSepolia ensures on-chain accessibility and integrity. Moreover, MantleSepolia's composability allows encrypted keys and data to be used in advanced computations, enabling unique features like secure identity management and future data retrieval without compromising privacy. By combining MantleSepolia's robust blockchain capabilities with Inco's privacy-focused encrypted storage, StealthPass provides a seamless and secure user experience.
 
 - **Composability**:
   - FHE allows cryptographic operations to be performed directly on encrypted data.
@@ -133,7 +133,7 @@ EDU Chain Blockchain plays a pivotal role in the StealthPass Protocol by serving
   - Supports advanced functionalities like prize distribution or anonymous messaging.
 
 - **Flexibility**:
-  - EDU Chain contracts can access unique keys and perform computations.
+  - MantleSepolia contracts can access unique keys and perform computations.
   - Users can retrieve results in the future without revealing sensitive data.
 
 ---
@@ -142,10 +142,10 @@ EDU Chain Blockchain plays a pivotal role in the StealthPass Protocol by serving
 
 ### Protocol Architecture and User Flow
 
-StealthPass's architecture leverages the combined power of EDU Chain Blockchain, Inco's encrypted storage, and Hyperlane's cross-chain messaging to create a seamless event ticketing experience. The protocol's user flow ensures a smooth interaction for organizers and attendees, from ticket purchases to verifications:
+StealthPass's architecture leverages the combined power of MantleSepolia Blockchain, Inco's encrypted storage, and Hyperlane's cross-chain messaging to create a seamless event ticketing experience. The protocol's user flow ensures a smooth interaction for organizers and attendees, from ticket purchases to verifications:
 
 1. **User Registration**: Users can connect wallets using Privy or generate local wallets for anonymous interactions.
-2. **Ticket Storage**: Credentials, such as NFTs and USDC, are securely stored on EDU Chain Blockchain. Encrypted ticket data is offloaded to Inco, functioning as an IPFS-like storage but with enhanced privacy features.
+2. **Ticket Storage**: Credentials, such as NFTs and USDC, are securely stored on MantleSepolia Blockchain. Encrypted ticket data is offloaded to Inco, functioning as an IPFS-like storage but with enhanced privacy features.
 3. **Verification Process**: During verification, the organizer uses re-encryption calls via the Inco gateway to validate encrypted credentials. This ensures privacy while enabling seamless event access.
-4. **Composable Computations**: EDU Chain Blockchain enables advanced computations with encrypted data, allowing features like lotteries, identity management
+4. **Composable Computations**: MantleSepolia Blockchain enables advanced computations with encrypted data, allowing features like lotteries, identity management, and more.
 
