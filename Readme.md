@@ -17,9 +17,15 @@ StealthPass enables event organizers to host events and users to securely purcha
 
 ## Deployed Addresses on MantleSepolia
 
-- **Event Contract**: 0x14cc99f0118d56267c74f6e27066d98D05E20AF1
-- **USDC Contract**: 0x27016F12b696d23fB9b5853Ef383Ec2527420982
-- **Hyperlane Mailbox**: 0xa70fda5B181DA549576CEE02C5e3110A193149EA
+1. **Event Contract**
+   - **Address**: `0x14cc99f0118d56267c74f6e27066d98D05E20AF1`
+   - **Verified URI**: [Mantle Explorer Link](https://explorer.sepolia.mantle.xyz/address/0x14cc99f0118d56267c74f6e27066d98D05E20AF1?tab=contract)
+
+2. **USDC Contract**
+   - **Address**: `0x27016F12b696d23fB9b5853Ef383Ec2527420982`
+
+3. **Hyperlane Mailbox**
+   - **Address**: `0xa70fda5B181DA549576CEE02C5e3110A193149EA`
 
 ---
 
